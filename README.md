@@ -45,6 +45,7 @@ The Camias Dryer is an IoT-based drying system with an integrated e-commerce pla
 8. Merge the approved Pull Request into `main`.
 
 ## Communication
+- **Documentation Maintainer:** Rei Ann D. Tenorio
 
 - **Team Name:** Camias Dryer
 - **Communication Channel:** MS Teams
