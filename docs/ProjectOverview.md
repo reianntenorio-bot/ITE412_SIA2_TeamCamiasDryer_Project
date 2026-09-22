@@ -51,10 +51,10 @@ Specifically, the system aims to:
 
 ## 3. Stakeholders
 
-- Agrigold Farm Learning Center Inc. — The primary beneficiary and system owner who will use the system for drying operations, monitoring, product management, and online selling.
-- System Administrator/Staff — Responsible for monitoring the drying process, managing system data, products, inventory, and orders.
-- Customers — Users who can browse available dried camias products and place orders through the e-commerce platform.
-- Local Farmers — Potential beneficiaries who may benefit from improved camias preservation, reduced post-harvest losses, and wider market opportunities.
+- **Agrigold Farm Learning Center Inc.** — The primary beneficiary and system owner who will use the system for drying operations, monitoring, product management, and online selling.
+- **System Administrator/Staff** — Responsible for monitoring the drying process, managing system data, products, inventory, and orders.
+- **Customers** — Users who can browse available dried camias products and place orders through the e-commerce platform.
+- **Local Farmers** — Potential beneficiaries who may benefit from improved camias preservation, reduced post-harvest losses, and wider market opportunities.
 
 ## 4. Tools & Technologies
 
@@ -117,3 +117,7 @@ The Hub-Spoke integration pattern is appropriate for the Camias Dryer system bec
 ### Diagram Reference
 
 ![High-Level Architecture Diagram](HighLevelArch.png)
+
+## 6. Messaging Workflow
+
+The Camias Dryer system uses a message-oriented middleware workflow to support asynchronous communication between the Drying Monitoring Module and the Drying Control Module. When a drying batch request is submitted, the Producer places the request into an in-memory message queue. The Consumer asynchronously retrieves the queued messages and processes each drying request one at a time. For the demonstration, drying batches with a weight of 10 kg or below are accepted, while batches above 10 kg are rejected. This producer-consumer approach reduces direct dependency between modules and demonstrates asynchronous messaging within the Camias Dryer system.
