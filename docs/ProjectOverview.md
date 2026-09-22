@@ -103,3 +103,17 @@ Specifically, the system aims to:
 - Figma
 - Postman
 - Google Chrome
+
+## 5. Integration Pattern Applied
+
+### Integration Pattern
+
+**Hub-Spoke**
+
+### Rationale
+
+The Hub-Spoke integration pattern is appropriate for the Camias Dryer system because the REST API Server acts as the central hub for communication between the system modules. The IoT Sensors send sensor data through the API, while the Web Dashboard retrieves information from the central hub for monitoring. The Drying Monitoring Module and Drying Control Module also communicate through the REST API Server. The Product & Order Module and E-Commerce Frontend use API calls and database queries through the central hub. This pattern reduces direct dependencies between modules and provides a centralized way to manage communication within the system.
+
+### Diagram Reference
+
+![High-Level Architecture Diagram](HighLevelArch.png)
