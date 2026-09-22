@@ -1,0 +1,41 @@
+[
+  {
+    "id": "71ecf41b-5ac6-4399-9925-848f655e3727",
+    "source": "scheduled",
+    "batchId": "572cda54-17fe-4daa-a39f-00e27fabe4bc",
+    "startedAt": "2026-09-02T08:22:00.000Z",
+    "endedAt": "2026-09-02T08:22:24.996Z",
+    "durationHours": 0.01,
+    "batchSizeKg": 15,
+    "status": "completed",
+    "progressPct": 100,
+    "avgTemperature": null,
+    "avgHumidity": null
+  },
+  {
+    "id": "907e3e97-a01b-40de-a9ca-2039f0621af8",
+    "source": "scheduled",
+    "batchId": "c025df17-df21-4fd0-b901-af5760509dc3",
+    "startedAt": "2026-08-15T06:00:00.000Z",
+    "endedAt": "2026-09-02T08:19:51.854Z",
+    "durationHours": 3,
+    "batchSizeKg": 15,
+    "status": "completed",
+    "progressPct": 100,
+    "avgTemperature": null,
+    "avgHumidity": null
+  },
+  {
+    "id": "4d78909f-c401-4330-89c0-004218b1a4ac",
+    "source": "scheduled",
+    "batchId": "a25f9c08-622b-4232-b9de-9ec8af3f570f",
+    "startedAt": "2025-08-14T06:00:00.000Z",
+    "endedAt": "2026-09-02T08:18:55.432Z",
+    "durationHours": 9218.32,
+    "batchSizeKg": 15,
+    "status": "completed",
+    "progressPct": 100,
+    "avgTemperature": null,
+    "avgHumidity": null
+  }
+]

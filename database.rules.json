@@ -1,0 +1,13 @@
+{
+  "rules": {
+    "kamyas_dryer": {
+      ".read": "auth != null",
+      "latest": {
+        ".write": false
+      },
+      "control": {
+        ".write": "auth != null"
+      }
+    }
+  }
+}

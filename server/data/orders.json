@@ -1,0 +1,64 @@
+[
+  {
+    "id": "38cac541-5f3c-4996-af58-eb15e078b698",
+    "userId": "oJYuqlT4AXfEywz663dBCaAQULF3",
+    "userEmail": "jomarpascual27@gmail.com",
+    "items": [
+      {
+        "id": 1,
+        "name": "Kamyass",
+        "price": 1,
+        "image": "https://i.ibb.co/rKG8k18d/IMG-7116-edited-JPG.jpg",
+        "quantity": 1
+      }
+    ],
+    "total": 1,
+    "paymentMethod": "qrph",
+    "paymentStatus": "paid",
+    "paymongoSessionId": "cs_69806ea593fc9503f9719854",
+    "status": "pending",
+    "deliveryAddress": {
+      "fullName": "Jomar Pascual",
+      "phone": "09660444848",
+      "street": "Victoria Oriental Mindoro",
+      "city": "Victoria",
+      "province": "Oriental",
+      "postalCode": "5200",
+      "notes": "5200",
+      "lat": 13.195454501020063,
+      "lng": 121.24223920112208
+    },
+    "createdAt": "2026-09-02T08:12:44.732Z"
+  },
+  {
+    "id": "a69169a0-a0de-4714-9833-a60594013333",
+    "userId": "oJYuqlT4AXfEywz663dBCaAQULF3",
+    "userEmail": "jomarpascual27@gmail.com",
+    "items": [
+      {
+        "id": 1,
+        "name": "Kamyass",
+        "price": 1,
+        "image": "https://i.ibb.co/rKG8k18d/IMG-7116-edited-JPG.jpg",
+        "quantity": 1
+      }
+    ],
+    "total": 1,
+    "paymentMethod": "qrph",
+    "paymentStatus": "paid",
+    "paymongoSessionId": "cs_68ce90eacf34e5fb93bfb06a",
+    "status": "processing",
+    "deliveryAddress": {
+      "fullName": "Jomar Pascual",
+      "phone": "09660444848",
+      "street": "Victoria Oriental Mindoro",
+      "city": "Victoria",
+      "province": "Oriental",
+      "postalCode": "5200",
+      "notes": "5200",
+      "lat": 13.195454501020063,
+      "lng": 121.24223920112208
+    },
+    "createdAt": "2026-09-02T07:40:40.891Z"
+  }
+]

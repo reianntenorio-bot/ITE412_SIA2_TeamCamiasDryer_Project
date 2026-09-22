@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+
+# Production
+dist/
+build/
+
+# Misc
+.DS_Store
+*.log
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Cache
+.cache/
+.parcel-cache/
+.eslintcache
+
+# Temporary files
+*.tmp
+tmp/
+temp/
+
+# Uploaded product images
+server/uploads/
+
+# Google Drive service account (never commit)
+server/kamyasdryer-dae01-e46f40295dc6.json
+**/kamyasdryer-dae01-e46f40295dc6.json
+credentials.json
