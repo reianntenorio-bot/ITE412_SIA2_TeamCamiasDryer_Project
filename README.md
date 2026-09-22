@@ -1,107 +1,143 @@
-# K-Smart Dryer - Kamyas Smart Machine
+# Camias Dryer
 
-An IoT-based intelligent Kamias (bilimbi fruit) drying system with real-time monitoring and smart controls.
+An IoT-based drying system with real-time monitoring, automated drying control, solar-assisted power, and an integrated e-commerce platform for dried camias products.
+
+**Course:** ITE412 – System Integration and Architecture 2
+
+**Team Name:** Camias Dryer
+
+## Team Members & Roles
+
+1. **Project Lead:** Nathaniel J. Caringal
+2. **Documenter:** Rei Ann D. Tenorio
+3. **Diagrammer:** Christian Dominic Garibay
+4. **Presenter:** Reishell A. Garilao
+5. **Researcher:** Harvey D. Macalalad
+
+## Project Title
+
+**CAMIAS DRYER: AN IoT BASED DRYING SYSTEM WITH E-COMMERCE FOR AGRIGOLD FARM LEARNING CENTER INC.**
+
+## Project Summary
+
+The Camias Dryer is an IoT-based drying system with an integrated e-commerce platform developed for Agrigold Farm Learning Center Inc. The system aims to improve the traditional drying process by using temperature and humidity sensors, automated drying control, real-time monitoring, and a solar-assisted power source. It also provides an e-commerce feature that allows dried camias products to be displayed, managed, and sold online.
 
 ## Features
 
-### 🔐 Authentication
-- Modern login page with animated gradient background
+### Authentication
+
+- Modern login page
+- User authentication
+- User access management
 - Secure authentication flow
 
-### 📊 Dashboard
-- **Real-time Monitoring**: Live temperature, humidity, and power usage tracking
-- **Multiple Drying Modes**: Standard, Gentle, Quick Dry, and Preserve modes for Kamias
-- **Smart Controls**: Start, pause, and stop functionality
-- **Progress Tracking**: Visual progress indicators and countdown timer
-- **Statistics**: Daily batches, energy savings, and quality score metrics
-- **Smart Features**: Auto-stop, quality monitor, energy saver mode
-- **Activity Log**: Track recent Kamias drying activities
+### Drying and Monitoring Dashboard
 
-### 🎨 Design
-- Clean white background with vibrant green accents
-- Emerald green gradients and highlights throughout
-- Light green backgrounds on cards and buttons
-- Responsive design for all screen sizes
-- Smooth animations and transitions
-- Lucide React icons throughout
-- Modern glassmorphism UI elements with subtle shadows
+- Real-time temperature monitoring
+- Real-time humidity monitoring
+- Power usage monitoring
+- Drying status monitoring
+- Multiple drying modes
+- Start, pause, and stop controls
+- Drying progress tracking
+- Countdown timer
+- Daily batch statistics
+- Energy-saving monitoring
+- Drying activity logs
+- Automated drying control
+- Quality monitoring
+- System notifications
+
+### IoT Features
+
+- ESP32-based device integration
+- Temperature and humidity sensor monitoring
+- Automated heating control
+- Ventilation fan control
+- Real-time sensor data transmission
+- Wi-Fi connectivity
+- Solar-assisted power integration
+- Drying cycle monitoring
+- Drying status synchronization
+
+### E-Commerce
+
+- Product listing
+- Product management
+- Inventory management
+- Product browsing
+- Shopping cart
+- Online product ordering
+- Order management
+- Customer order information
+- Delivery address management
 
 ## Tech Stack
 
-- **React** - UI framework
-- **Vite** - Build tool
-- **React Router** - Navigation
-- **Lucide React** - Icon library
-- **CSS3** - Styling with animations
+### Frontend
 
-## Installation
+- React
+- Vite
+- React Router
+- JavaScript
+- HTML
+- CSS
+- Lucide React
 
-```bash
-# Install dependencies
-npm install
+### Backend
 
-# Start development server
-npm run dev
+- Node.js
+- REST API
+- Express-based server components
 
-# Build for production
-npm run build
-```
+### Database and Cloud Services
 
-## Usage
+- Firebase
+- Firebase Authentication
+- Firebase Firestore
+- Firebase Realtime Database
+- Firebase Storage
 
-1. Open the application in your browser
-2. Login with any credentials (demo mode)
-3. Access the dashboard to control your Kamias dryer
-4. Select a drying mode (Standard, Gentle, Quick Dry, Preserve)
-5. Start the dryer and monitor real-time sensor data
-6. View statistics and activity logs for Kamias drying
+### IoT and Hardware
 
-## Project Structure
+- ESP32 Microcontroller
+- Temperature Sensor
+- Humidity Sensor
+- HX711 Load Cell Amplifier
+- Heating Element
+- Ventilation Fan
+- Relay Module
+- Solar Panel
+- Solar Charge Controller
+- DC-DC Buck Converter
 
-```
-KamyasDryer/
-├── server/               # Products API (required for Manage Products & Shop)
-│   └── npm run dev       # Runs on port 3001
-├── ecommerce-client/     # Standalone e-commerce store (K-Smart Store)
-│   └── npm run dev       # Runs on port 5174
-├── src/
-├── pages/
-│   ├── Login.jsx          # Login page component
-│   ├── Login.css          # Login page styles
-│   ├── Dashboard.jsx      # Dashboard component
-│   └── Dashboard.css      # Dashboard styles
-├── App.jsx                # Main app with routing
-├── main.jsx               # App entry point
-└── index.css              # Global styles
-```
+### Development and Testing Tools
 
-## IoT Features
+- Visual Studio Code
+- Arduino IDE / PlatformIO
+- Git
+- GitHub
+- Postman
+- Figma
+- Google Chrome
 
-- **Temperature Monitoring**: Real-time temperature tracking (25-80°C) for optimal Kamias drying
-- **Humidity Sensing**: Humidity levels during Kamias drying cycle
-- **Power Monitoring**: Live power consumption tracking
-- **Smart Automation**: Auto-stop when Kamias fruits are perfectly dry
-- **Energy Efficiency**: Track and optimize energy usage
-- **Quality Monitor**: Ensure optimal drying quality for Kamias preservation
-- **Cycle Notifications**: Get notified when Kamias drying cycle completes
+## Repository Structure
 
-## Future Enhancements
-
-- Mobile app integration
-- Voice control support
-- Machine learning for optimal Kamias drying times
-- Remote monitoring via smartphone
-- Maintenance predictions
-- Energy cost calculations
-- Integration with smart home systems
-- Batch quality analysis
-- Moisture content prediction
-- Export quality certification
-
-## License
-
-MIT
-
-## Author
-
-Kamyas IoT Solutions
+```text
+CamiasDryer/
+├── device/                  # ESP32 and IoT device code
+├── ecommerce-client/        # E-commerce application
+├── public/                  # Public assets
+├── server/                  # Backend and server-side components
+├── src/                     # Main application source code
+├── docs/                    # Project documentation
+├── tests/                   # Test cases
+├── integration/             # Integration scripts and configurations
+├── package.json             # Main project dependencies
+├── package-lock.json
+├── firebase.json             # Firebase configuration
+├── firestore.rules           # Firestore security rules
+├── firestore.indexes.json    # Firestore indexes
+├── database.rules.json       # Realtime Database rules
+├── vite.config.js            # Vite configuration
+└── README.md                 # Project documentation
