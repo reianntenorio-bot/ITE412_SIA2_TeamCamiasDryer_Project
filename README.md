@@ -135,9 +135,9 @@ CamiasDryer/
 ├── integration/             # Integration scripts and configurations
 ├── package.json             # Main project dependencies
 ├── package-lock.json
-├── firebase.json             # Firebase configuration
-├── firestore.rules           # Firestore security rules
-├── firestore.indexes.json    # Firestore indexes
-├── database.rules.json       # Realtime Database rules
-├── vite.config.js            # Vite configuration
-└── README.md                 # Project documentation
+├── firebase.json            # Firebase configuration
+├── firestore.rules          # Firestore security rules
+├── firestore.indexes.json   # Firestore indexes
+├── database.rules.json      # Realtime Database rules
+├── vite.config.js           # Vite configuration
+└── README.md                # Project documentation
