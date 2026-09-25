@@ -121,7 +121,7 @@ The Camias Dryer is an IoT-based drying system with an integrated e-commerce pla
 - Figma
 - Google Chrome
 
-Test update - Chris
+Test update - Chrisssss
 
 ## Repository Structure
 
