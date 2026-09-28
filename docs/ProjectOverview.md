@@ -121,3 +121,33 @@ The Hub-Spoke integration pattern is appropriate for the Camias Dryer system bec
 ## 6. Messaging Workflow
 
 The Camias Dryer system uses a message-oriented middleware workflow to support asynchronous communication between the Drying Monitoring Module and the Drying Control Module. When a drying batch request is submitted, the Producer places the request into an in-memory message queue. The Consumer asynchronously retrieves the queued messages and processes each drying request one at a time. For the demonstration, drying batches with a weight of 10 kg or below are accepted, while batches above 10 kg are rejected. This producer-consumer approach reduces direct dependency between modules and demonstrates asynchronous messaging within the Camias Dryer system.
+
+## 7. High-Level System Overview
+
+### 7.1 Major Modules/Subsystems
+
+**Drying Monitoring Module**  
+Collects and displays temperature and humidity data from the IoT sensors to monitor the drying process in real time.
+
+**Drying Control Module**  
+Manages the drying operation based on configured drying settings and control commands such as start, pause, and stop.
+
+**Product and Order Management Module**  
+Manages Camias products, product information, customer orders, and order records for the e-commerce component of the system.
+
+**Payment Processing Module**  
+Handles payment requests and receives payment status from the payment gateway for customer transactions.
+
+### 7.2 External Systems/Interfaces
+
+The Camias Dryer system interacts with the following external systems and interfaces:
+
+- **IoT Sensors** – provide temperature and humidity readings for drying monitoring.
+- **Payment Gateway** – processes customer payment requests and returns payment status.
+- **User/Customer Interface** – allows customers to view products, place orders, and receive order confirmations.
+- **Firebase Realtime Database** – stores and synchronizes system data in real time.
+- **REST API** – provides communication between the system modules and client applications.
+
+### 7.3 Data Flow Summary
+
+Data flows through the Camias Dryer system from the IoT sensors, users, and external services. IoT sensors send temperature and humidity readings to the Drying Monitoring Module for real-time monitoring and storage. The Owner can view monitoring information and send drying settings and control commands to the Drying Control Module. For the e-commerce component, customers access product information, submit orders, and provide payment information through the Product and Order Management Module. The system communicates with the Payment Gateway to process transactions and receives the payment status for order confirmation.
